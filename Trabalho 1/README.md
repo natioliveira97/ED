@@ -32,9 +32,9 @@ Linguagem: Esse trabalho foi feito em linguagem C na versão C99.
 
 Bibliotecas utilizadas:
 
-		* stdio.h: Biblioteca padrão de entrada e saída de dados.
-		* stdlid.h: Biblioteca padrão.
-		* math.h: Biblioteca padrão para funções matemáticas básicas.
+* stdio.h: Biblioteca padrão de entrada e saída de dados.
+* stdlid.h: Biblioteca padrão.
+* math.h: Biblioteca padrão para funções matemáticas básicas.
 
 ## Relatório
 
