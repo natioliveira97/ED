@@ -1,5 +1,7 @@
 # Trabalho 1
 
+Natalia Oliveira Borges - 16/0015863
+
 Esse trabalho possui uma calculadora com funcionalidade de pilha de operações e resolução de expressões.
 
 ## Modo Resolução de Expressões
