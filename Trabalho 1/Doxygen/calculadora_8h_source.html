@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Resolução de Expressões e Calculadora: Código-Fonte de calculadora.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Resolução de Expressões e Calculadora
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">calculadora.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="calculadora_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __CALCULADORA_H__</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __CALCULADORA_H__</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Definiçōes das funçōes:</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">double</span> <a class="code" href="calculadora_8h.html#ac2ae2b3877a5af41b8376de7fe8c8b77">transforma_em_numero</a>(<span class="keywordtype">char</span> *numero, <span class="keywordtype">int</span> tamanho);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="calculadora_8h.html#a8bb1f1a1046a70759261a1dbad6e673f">imprime_numero</a>(<span class="keywordtype">double</span> numero);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> <a class="code" href="calculadora_8h.html#a11270e1da63ba5588ff0dcdade58ebaf">caractere_valido</a>(<span class="keywordtype">char</span> c);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">int</span> <a class="code" href="calculadora_8h.html#a563a4d63d201c87a38aaae99326ebdb6">validacao_de_equacao</a>(<span class="keywordtype">char</span> *expressao, <span class="keywordtype">int</span> tamanho);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">int</span> <a class="code" href="calculadora_8h.html#a1a0d8656d25284dc149281cf0883363c">validacao_de_escopo</a>(<span class="keywordtype">char</span> *expressao, <span class="keywordtype">int</span> tamanho);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">int</span> <a class="code" href="calculadora_8h.html#aec45e5b152abc31d448cd9095a3656e4">validacao_de_entrada</a>(<span class="keywordtype">char</span> *expressao, <span class="keywordtype">int</span> tamanho);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="calculadora_8h.html#a96c0bb7b7e51729e0358a4d0e86744eb">forma_posfixa</a>(<span class="keywordtype">char</span> *expressao, <span class="keywordtype">int</span> tamanho);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">double</span> <a class="code" href="calculadora_8h.html#ab8f580b953bab3396d7d33bee32868ad">avalia_expressao</a>(<span class="keywordtype">char</span> *expressao, <span class="keywordtype">int</span> tamanho);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">int</span> <a class="code" href="calculadora_8h.html#a146c52e1b6876d429b74ab938bb62268">atualiza_calculadora</a>(<a class="code" href="structpilha.html">t_pilha</a> *<a class="code" href="calculadora_8h.html#a09a0bd2c971d6fb73960d5bf6c9dd8b9">calculadora</a>, <span class="keywordtype">char</span> *entrada);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> <a class="code" href="calculadora_8h.html#ac567c06911979cf361795b613a0a3be8">resolucao_de_expressao</a>();</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">void</span> <a class="code" href="calculadora_8h.html#a09a0bd2c971d6fb73960d5bf6c9dd8b9">calculadora</a>();</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="calculadora_8h_html_a146c52e1b6876d429b74ab938bb62268"><div class="ttname"><a href="calculadora_8h.html#a146c52e1b6876d429b74ab938bb62268">atualiza_calculadora</a></div><div class="ttdeci">int atualiza_calculadora(t_pilha *calculadora, char *entrada)</div><div class="ttdoc">Atualiza a pilha da calculadora após uma entrada.  Verifica se a entrada é válida e se for atualiza a...</div><div class="ttdef"><b>Definition:</b> calculadora.c:392</div></div>
+<div class="ttc" id="calculadora_8h_html_a96c0bb7b7e51729e0358a4d0e86744eb"><div class="ttname"><a href="calculadora_8h.html#a96c0bb7b7e51729e0358a4d0e86744eb">forma_posfixa</a></div><div class="ttdeci">char * forma_posfixa(char *expressao, int tamanho)</div><div class="ttdoc">Cria uma expressão posfixa correspondente a expressão infixa dada. </div><div class="ttdef"><b>Definition:</b> calculadora.c:215</div></div>
+<div class="ttc" id="calculadora_8h_html_ac567c06911979cf361795b613a0a3be8"><div class="ttname"><a href="calculadora_8h.html#ac567c06911979cf361795b613a0a3be8">resolucao_de_expressao</a></div><div class="ttdeci">void resolucao_de_expressao()</div><div class="ttdoc">Entra no modo resolução de expressōes. </div><div class="ttdef"><b>Definition:</b> calculadora.c:549</div></div>
+<div class="ttc" id="calculadora_8h_html_a11270e1da63ba5588ff0dcdade58ebaf"><div class="ttname"><a href="calculadora_8h.html#a11270e1da63ba5588ff0dcdade58ebaf">caractere_valido</a></div><div class="ttdeci">int caractere_valido(char c)</div><div class="ttdoc">Verifica se o caractere é válido. </div><div class="ttdef"><b>Definition:</b> calculadora.c:62</div></div>
+<div class="ttc" id="calculadora_8h_html_aec45e5b152abc31d448cd9095a3656e4"><div class="ttname"><a href="calculadora_8h.html#aec45e5b152abc31d448cd9095a3656e4">validacao_de_entrada</a></div><div class="ttdeci">int validacao_de_entrada(char *expressao, int tamanho)</div><div class="ttdoc">Verifica se a entrada é valida. </div><div class="ttdef"><b>Definition:</b> calculadora.c:208</div></div>
+<div class="ttc" id="calculadora_8h_html_a09a0bd2c971d6fb73960d5bf6c9dd8b9"><div class="ttname"><a href="calculadora_8h.html#a09a0bd2c971d6fb73960d5bf6c9dd8b9">calculadora</a></div><div class="ttdeci">void calculadora()</div><div class="ttdoc">Entra no modo calculadora. </div><div class="ttdef"><b>Definition:</b> calculadora.c:592</div></div>
+<div class="ttc" id="calculadora_8h_html_ab8f580b953bab3396d7d33bee32868ad"><div class="ttname"><a href="calculadora_8h.html#ab8f580b953bab3396d7d33bee32868ad">avalia_expressao</a></div><div class="ttdeci">double avalia_expressao(char *expressao, int tamanho)</div><div class="ttdoc">Resolve a expressão dada. </div><div class="ttdef"><b>Definition:</b> calculadora.c:315</div></div>
+<div class="ttc" id="calculadora_8h_html_ac2ae2b3877a5af41b8376de7fe8c8b77"><div class="ttname"><a href="calculadora_8h.html#ac2ae2b3877a5af41b8376de7fe8c8b77">transforma_em_numero</a></div><div class="ttdeci">double transforma_em_numero(char *numero, int tamanho)</div><div class="ttdoc">Transforma uma entrada de caracteres numéricos em número. </div><div class="ttdef"><b>Definition:</b> calculadora.c:23</div></div>
+<div class="ttc" id="calculadora_8h_html_a8bb1f1a1046a70759261a1dbad6e673f"><div class="ttname"><a href="calculadora_8h.html#a8bb1f1a1046a70759261a1dbad6e673f">imprime_numero</a></div><div class="ttdeci">void imprime_numero(double numero)</div><div class="ttdoc">Imprime o número. </div><div class="ttdef"><b>Definition:</b> calculadora.c:41</div></div>
+<div class="ttc" id="structpilha_html"><div class="ttname"><a href="structpilha.html">pilha</a></div><div class="ttdef"><b>Definition:</b> pilha.h:20</div></div>
+<div class="ttc" id="calculadora_8h_html_a1a0d8656d25284dc149281cf0883363c"><div class="ttname"><a href="calculadora_8h.html#a1a0d8656d25284dc149281cf0883363c">validacao_de_escopo</a></div><div class="ttdeci">int validacao_de_escopo(char *expressao, int tamanho)</div><div class="ttdoc">Verifica se os delimitadores de equação estão sintaticamente corretos. </div><div class="ttdef"><b>Definition:</b> calculadora.c:147</div></div>
+<div class="ttc" id="calculadora_8h_html_a563a4d63d201c87a38aaae99326ebdb6"><div class="ttname"><a href="calculadora_8h.html#a563a4d63d201c87a38aaae99326ebdb6">validacao_de_equacao</a></div><div class="ttdeci">int validacao_de_equacao(char *expressao, int tamanho)</div><div class="ttdoc">Verifica se a equação é sintaticamente correta. </div><div class="ttdef"><b>Definition:</b> calculadora.c:82</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

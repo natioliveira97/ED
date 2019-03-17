@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Resolução de Expressões e Calculadora: Código-Fonte de pilha.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Resolução de Expressões e Calculadora
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">pilha.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pilha_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __PILHA_H__</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __PILHA_H__</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Definiçōes:</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structelemento.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structelemento.html">elemento</a>{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">double</span> dado;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">struct </span><a class="code" href="structelemento.html">elemento</a> *anterior;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}<a class="code" href="pilha_8h.html#ab07eead3479170c4de5e2cdbbb330227">t_elemento</a>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structpilha.html">   20</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpilha.html">pilha</a>{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="structelemento.html">t_elemento</a> *topo;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}<a class="code" href="pilha_8h.html#a7b25683c20c06abd18064a4abadb287c">t_pilha</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// Assinaturas das funçōes:</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="structpilha.html">t_pilha</a>* <a class="code" href="pilha_8h.html#ab81264872354d455ca6b171f241a880e">get_pilha</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="structelemento.html">t_elemento</a>* <a class="code" href="pilha_8h.html#acd9f76ea7ae8d9a120a1397bdf9d596a">get_elemento</a>(<span class="keywordtype">double</span> dado);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">int</span> <a class="code" href="pilha_8h.html#a9e8d25a2b0ba6b2a09f5afeb313515c7">pilha_vazia</a>(<a class="code" href="structpilha.html">t_pilha</a> *<a class="code" href="structpilha.html">pilha</a>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pilha_8h.html#a3d8c6714fc0561e7d9e5b622a3f24111">inserir_elemento</a>(<a class="code" href="structpilha.html">t_pilha</a> *pilha, <span class="keywordtype">double</span> dado);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">int</span> <a class="code" href="pilha_8h.html#a262e8d015da01b35e02a414176f07655">retirar_elemento</a>(<a class="code" href="structpilha.html">t_pilha</a> *pilha);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pilha_8h.html#a58d636ca4af1f251be114b6d6d78e583">libera_pilha</a>(<a class="code" href="structpilha.html">t_pilha</a> *pilha);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">int</span> <a class="code" href="pilha_8h.html#afd9591a013b0abbfd26f12c895461526">tamanho_pilha</a>(<a class="code" href="structpilha.html">t_pilha</a> *pilha);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pilha_8h.html#a7754e1e0150be8a3a784d637ed83a699">imprime_pilha</a>(<a class="code" href="structpilha.html">t_pilha</a> *pilha);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="pilha_8h_html_a3d8c6714fc0561e7d9e5b622a3f24111"><div class="ttname"><a href="pilha_8h.html#a3d8c6714fc0561e7d9e5b622a3f24111">inserir_elemento</a></div><div class="ttdeci">void inserir_elemento(t_pilha *pilha, double dado)</div><div class="ttdoc">Insere um elemento na pilha. </div><div class="ttdef"><b>Definition:</b> pilha.c:32</div></div>
+<div class="ttc" id="structelemento_html"><div class="ttname"><a href="structelemento.html">elemento</a></div><div class="ttdef"><b>Definition:</b> pilha.h:14</div></div>
+<div class="ttc" id="pilha_8h_html_ab81264872354d455ca6b171f241a880e"><div class="ttname"><a href="pilha_8h.html#ab81264872354d455ca6b171f241a880e">get_pilha</a></div><div class="ttdeci">t_pilha * get_pilha()</div><div class="ttdoc">Cria uma pilha. </div><div class="ttdef"><b>Definition:</b> pilha.c:15</div></div>
+<div class="ttc" id="pilha_8h_html_ab07eead3479170c4de5e2cdbbb330227"><div class="ttname"><a href="pilha_8h.html#ab07eead3479170c4de5e2cdbbb330227">t_elemento</a></div><div class="ttdeci">struct elemento t_elemento</div></div>
+<div class="ttc" id="pilha_8h_html_a58d636ca4af1f251be114b6d6d78e583"><div class="ttname"><a href="pilha_8h.html#a58d636ca4af1f251be114b6d6d78e583">libera_pilha</a></div><div class="ttdeci">void libera_pilha(t_pilha *pilha)</div><div class="ttdoc">Libera a memória alocada para a pilha. </div><div class="ttdef"><b>Definition:</b> pilha.c:51</div></div>
+<div class="ttc" id="structpilha_html"><div class="ttname"><a href="structpilha.html">pilha</a></div><div class="ttdef"><b>Definition:</b> pilha.h:20</div></div>
+<div class="ttc" id="pilha_8h_html_acd9f76ea7ae8d9a120a1397bdf9d596a"><div class="ttname"><a href="pilha_8h.html#acd9f76ea7ae8d9a120a1397bdf9d596a">get_elemento</a></div><div class="ttdeci">t_elemento * get_elemento(double dado)</div><div class="ttdoc">Cria um elemento da pilha. </div><div class="ttdef"><b>Definition:</b> pilha.c:21</div></div>
+<div class="ttc" id="pilha_8h_html_afd9591a013b0abbfd26f12c895461526"><div class="ttname"><a href="pilha_8h.html#afd9591a013b0abbfd26f12c895461526">tamanho_pilha</a></div><div class="ttdeci">int tamanho_pilha(t_pilha *pilha)</div><div class="ttdoc">Verifica quantos elemento tem na pilha. </div><div class="ttdef"><b>Definition:</b> pilha.c:58</div></div>
+<div class="ttc" id="pilha_8h_html_a262e8d015da01b35e02a414176f07655"><div class="ttname"><a href="pilha_8h.html#a262e8d015da01b35e02a414176f07655">retirar_elemento</a></div><div class="ttdeci">int retirar_elemento(t_pilha *pilha)</div><div class="ttdoc">Retira um elemento da pilha. </div><div class="ttdef"><b>Definition:</b> pilha.c:38</div></div>
+<div class="ttc" id="pilha_8h_html_a7754e1e0150be8a3a784d637ed83a699"><div class="ttname"><a href="pilha_8h.html#a7754e1e0150be8a3a784d637ed83a699">imprime_pilha</a></div><div class="ttdeci">void imprime_pilha(t_pilha *pilha)</div><div class="ttdoc">Imprime a pilha. </div><div class="ttdef"><b>Definition:</b> pilha.c:68</div></div>
+<div class="ttc" id="pilha_8h_html_a9e8d25a2b0ba6b2a09f5afeb313515c7"><div class="ttname"><a href="pilha_8h.html#a9e8d25a2b0ba6b2a09f5afeb313515c7">pilha_vazia</a></div><div class="ttdeci">int pilha_vazia(t_pilha *pilha)</div><div class="ttdoc">Verifica se a pilha está vazia. </div><div class="ttdef"><b>Definition:</b> pilha.c:28</div></div>
+<div class="ttc" id="pilha_8h_html_a7b25683c20c06abd18064a4abadb287c"><div class="ttname"><a href="pilha_8h.html#a7b25683c20c06abd18064a4abadb287c">t_pilha</a></div><div class="ttdeci">struct pilha t_pilha</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
