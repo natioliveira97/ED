@@ -1,7 +1,10 @@
 # Trabalho 2
 
 Lívia Gomes Costa Fonseca - 16/0034078
+
 Natalia Oliveira Borges - 16/0015863
+
+## Objetivo
 
 Esse projeto tem o objetivo de trabalhar as estruturas árvore e lista. O objetivo é criar um população a partir de 4 indivíduos iniciais e para isso foram utilizados os personagens de Dragon Ball. As características dos personagens são escolhidas aleatoriamente e os personagens filhos vão herdando as características dos personagens pais. 
 
